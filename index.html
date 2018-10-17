@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script>
+			window.onload = function(){
+			
+				var oUl = document.getElementById("lunbotu").getElementsByTagName('ul')[0];
+				var aLiUl = oUl.getElementsByTagName('li');
+				
+				var oOl = document.getElementById("lunbotu").getElementsByTagName('ol')[0];
+				var aLiOl = oOl.getElementsByTagName('li');
+				
+				
+				for(var i=0;i<aLiOl.length;i++){
+					aLiOl[i].index = i;
+					aLiOl[i].onmouseover = function(){
+						
+						for(var i=0;i<aLiOl.length;i++){
+							aLiOl[i].className = ' ';
+							aLiUl[i].style.display = 'none';
+						}
+						
+						this.className = 'active';
+						aLiUl[this.index].style.display = 'block';
+						
+					};
+				}
+				
+			};
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="logo">
+					<h1><a href="index.html"><img src="img/logo.jpg" alt="首页"/></a></h1>
+				</div>
+				<div id="sousuo">
+					<form action="list.html" method="post">
+						<input type="text" placeholder="请输入作者名称或者书名" /><input type="submit" value="搜索" />
+					</form>
+					<ul>
+						<li>热门推荐：</li>
+						<li><a href="list_content.html">原来你还在这里</a></li>
+						<li><a href="list_content.html">原来你还在这里</a></li>
+						<li><a href="list_content.html">原来你还在这里</a></li>
+						<li><a href="list_content.html">原来你还在这里</a></li>
+					</ul>
+				</div>
+				
+				<div id="person">
+					<ul>
+						<li><a href="#">登录</a>&nbsp;&nbsp;|</li>
+						<li><a href="#"> 注册</a>&nbsp;&nbsp;|</li>
+						<li><a href="#">意见反馈</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li class="active"><a href="index.html">首页</a></li>
+				<li><a href="#">文学</a>
+					<ul>
+						<li><a href="list.html">现代文学</a></li>
+						<li><a href="list.html">外国文学</a></li>
+						<li><a href="list.html">古典文学</a></li>
+						<li><a href="list.html">诗词歌赋</a></li>
+						<li><a href="list.html">随笔散文</a></li>
+					</ul>
+				</li>
+				<li><a href="list.html">心理学</a></li>
+				<li><a href="list.html">经济学</a></li>
+				<li><a href="list.html">自然科学</a></li>
+				<li><a href="list.html">历史</a></li>
+				<li><a href="list.html">其他</a></li>
+			</ul>
+		</nav>
+		<article>
+			<section id="lunbotu">
+				<ul>
+				<li style="display: block;"><a href="list_content.html"><img src="img/lubotu1.jpg"/></a></li>
+				<li><a href="list_content.html"><img src="img/lubotu2.jpg"/></a></li>
+				<li><a href="list_content.html"><img src="img/lunbotu4.jpg"/></a></li>
+			</ul>
+			<ol>
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+			</ol>
+			</section>
+			<section id="bianzhe">
+				<h1>编者推荐</h1>
+				<ul>
+					<li><a href="list_content.html"><img src="img/article.jpg"/><span>新西兰岛屿湾旅行攻略</span></a></li>
+					<li><a href="list_content.html"><img src="img/article.jpg"/><span>新西兰岛屿湾旅行攻略</span></a></li>
+					<li><a href="list_content.html"><img src="img/article.jpg"/><span>新西兰岛屿湾旅行攻略</span></a></li>
+					<li><a href="list_content.html"><img src="img/article.jpg"/><span>新西兰岛屿湾旅行攻略</span></a></li>
+					<li><a href="list_content.html"><img src="img/article.jpg"/><span>新西兰岛屿湾旅行攻略</span></a></li>
+					<li><a href="list_content.html"><img src="img/article.jpg"/><span>新西兰岛屿湾旅行攻略</span></a></li>
+					<li><a href="list_content.html"><img src="img/article.jpg"/><span>新西兰岛屿湾旅行攻略</span></a></li>
+					<li><a href="list_content.html"><img src="img/article.jpg"/><span>新西兰岛屿湾旅行攻略</span></a></li>
+					<li><a href="list_content.html"><img src="img/article.jpg"/><span>新西兰岛屿湾旅行攻略</span></a></li>
+					<li><a href="list_content.html"><img src="img/article.jpg"/><span>新西兰岛屿湾旅行攻略</span></a></li>
+				</ul>
+			</section>
+			<section id="zuixin">
+				<h1>最新上架</h1>
+				<ul>
+					<li><span>2018-6-9</span><em>[历史]</em><a href="list_content.html">新西兰岛屿湾旅行攻略</a></li>
+					<li><span>2018-6-9</span><em>[历史]</em><a href="list_content.html">新西兰岛屿湾旅行攻略</a></li>
+					<li><span>2018-6-9</span><em>[历史]</em><a href="list_content.html">新西兰岛屿湾旅行攻略</a></li>
+					<li><span>2018-6-9</span><em>[历史]</em><a href="list_content.html">新西兰岛屿湾旅行攻略</a></li>
+					<li><span>2018-6-9</span><em>[历史]</em><a href="list_content.html">新西兰岛屿湾旅行攻略</a></li>
+					<li><span>2018-6-9</span><em>[历史]</em><a href="list_content.html">新西兰岛屿湾旅行攻略</a></li>
+					<li><span>2018-6-9</span><em>[历史]</em><a href="list_content.html">新西兰岛屿湾旅行攻略</a></li>
+					<li><span>2018-6-9</span><em>[历史]</em><a href="list_content.html">新西兰岛屿湾旅行攻略</a></li>
+					<li><span>2018-6-9</span><em>[历史]</em><a href="list_content.html">新西兰岛屿湾旅行攻略</a></li>
+					<li><span>2018-6-9</span><em>[历史]</em><a href="list_content.html">新西兰岛屿湾旅行攻略</a></li>
+				</ul>
+			</section>	
+		</article>
+		<footer>
+			<p>阅读天地是学习分享平台，如对本站有意见和建议请留言</p>
+			<p>本站所有信息仅用于学习交流，不用商业用途 Powered by 阅读天地</p>
+		</footer>
+		
+	</body>
+</html>
+

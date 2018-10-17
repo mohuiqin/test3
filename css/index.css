@@ -1,0 +1,263 @@
+*{
+	padding:0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*header*/
+.container{
+	width: 1100px;
+	margin: 0 auto;
+}
+ #logo{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	width: 332px;
+	height: 91px;
+}
+#sousuo{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 25px;
+	text-align: right;
+	width: 513px;
+	text-align: right;
+}
+input[type="text"] {
+	font-family: "微软雅黑";
+    border: solid 1px #ccc;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    width: 285px;
+    padding-left: 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+input[type="submit"]{
+	color: #fff;
+	width: 100px;
+	background-color: #3598AD;
+	border: solid 1px #3598ad;
+	height: 37px;
+	line-height: 37px;
+	vertical-align: top;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	padding:0 10px;
+	display: inline-block;
+}
+#sousuo ul{
+	float: right;
+}
+#sousuo ul li{
+	float: left;
+	font-size: 12px;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+#sousuo ul li a{
+	color: #000000;
+}
+#person{
+	margin-top: 30px;
+	float: right;
+}
+#person li{
+	float: left;
+	margin-left: 10px;
+	font-size: 14px;
+}
+#person li a{
+	color: #000000;
+}
+/*nav*/
+nav{
+	height: 50px;
+	width: 100%;
+	border-bottom: 2px solid cornflowerblue;
+	margin-top: 30px;
+}
+nav>ul{
+	width: 1100px;
+	margin: 0 auto;
+}
+nav .active{
+	background: cornflowerblue;
+}
+nav ul li{
+	float: left;
+	width: 120px;
+	line-height: 52px;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	font-size: 18px;
+}
+nav ul li a{
+	color: #000000;
+}
+nav ul li a:hover {
+	color: cornflowerblue;
+}
+nav ul li ul{
+ 	display: none;	
+ 	position: absolute;
+ 	z-index: 999;
+ 	left: 0;
+ 	border-bottom: 1px solid #CECBCB;;
+ 	border-bottom: none;
+}
+nav ul li ul li{
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #CECBCB;;
+	border-top: none;
+	font-size: 14px;
+}
+nav ul li ul li a{
+	color: #000000;
+}
+nav ul>li:hover ul{
+	display: block;
+}
+/*轮播图*/
+article #lunbotu img{
+	border: none;
+	height: 330px;
+	width: 100%;
+}
+article #lunbotu{
+	position: relative;
+	height: 330px;
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid lavender;
+}
+article #lunbotu ul{
+	width: 100%;
+	height: 330px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+article #lunbotu	ul li{
+	width: 100%;
+	height: 330px;
+	display: none;
+}
+#lunbotu ol{
+	z-index: 2;
+	width: 250px;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+#lunbotu ol li{
+	width: 60px;
+	height: 10px;
+	float: left;
+	margin: 0 2px;
+	display: inline;
+	background: cornflowerblue;
+}
+#lunbotu ol .active{
+	background: #f60;
+}
+/*编者推荐*/
+#bianzhe{
+	
+}
+#bianzhe h1{
+	width: 1040px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size:28px;
+}
+#bianzhe ul{
+	width: 1040px;
+	height: 420px;
+	margin: 0 auto;
+	border: 1px solid lavender;
+	background: beige;
+}
+#bianzhe ul li{
+	float: left;
+	margin: 30px 20px 20px 30px;
+	position: relative;
+	height: 153px;
+	width: 155px;
+}
+#bianzhe ul li span{
+	position: absolute;
+	left:0;
+	bottom: -20px;
+	width: 155px;
+	height: 20px;
+	overflow: hidden;
+	text-align: center;
+}
+#bianzhe ul li a{
+	font-size: 14px;
+	color: #000000;
+}
+#bianzhe ul li a:hover span{
+	text-decoration: underline;
+}
+/*最新上架*/
+	
+#zuixin h1{
+	width: 1040px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size:28px;
+}
+#zuixin ul{
+	width: 1040px;
+	height: 260px;
+	margin: 0 auto;
+	border: 1px solid lavender;
+	background: beige;
+}
+#zuixin ul li{
+	float: left;
+	margin-left: 30px;
+	margin-top: 10px;
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	width: 450px;
+}
+#zuixin ul li span{
+	font-size: 14px;
+	position: absolute;
+	right: 0;
+}	
+#zuixin ul li em{
+	margin-right: 10px;
+	color: gray;
+}
+#zuixin ul li a{
+	color: #000000;
+	font-size: 14px;
+}	
+#zuixin ul li a:hover{
+	color: cornflowerblue;
+	text-decoration: underline;
+}
+footer{
+	height: 70px;
+	width: 100%;
+	text-align: center;
+	border-top: 1px solid lavender;;
+	padding-top: 30px;
+	font-size: 14px;
+}
